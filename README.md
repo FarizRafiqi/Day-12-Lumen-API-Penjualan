@@ -2,7 +2,7 @@
 
 Ikuti step-step berikut ini dengan benar untuk menjalankan projek.
 
-1. Copy file ```.env.example```, kemudian rename menjadi ```.env```.
+1. Copy file ```.env.example```, kemudian rename menjadi ```.env```. Masukan kredensial Mailgun yang saya submit di LMS Maxy Academy.
 > Note: Semua konfigurasi di dalam file tersebut sudah siap pakai, baik APP_KEY, konfigurasi database maupun untuk mengirim email.
 2. Jalankan ```npm i```, kemudian jalankan ```composer i```.
 3. Jalankan ```php artisan migrate --seed```.

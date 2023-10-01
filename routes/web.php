@@ -126,7 +126,7 @@ $router->group(['prefix' => 'penjualan'], function () use ($router) {
 
     $router->get('/{id}/send-email', ['middleware' => 'auth', function (Request $request, $id) {
         Mail::raw('This is the email body', function ($message) {
-            $message->to('rafiqthegamers@gmail.com')
+            $message->to('rafiqifariz123@gmail.com')
                 ->subject('Lumen Email Test');
         });
 
