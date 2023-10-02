@@ -3,6 +3,7 @@
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 /*
@@ -112,7 +113,7 @@ $router->group(['prefix' => 'penjualan'], function () use ($router) {
     //                                      👇 (kalau pakai ini ga perlu cek user lagi)
     $router->get('/{id}/confirm', ['middleware' => 'auth', function (Request $request, $id) {
         $user = $request->user();
-
+//        Log::debug($user);
         // ini tidak perlu dilakukan jika mencantumkan middleware auth seperti di atas
 //        if ($user === null) {
 //            return response()->json(['error' => 'Unauthorized'], 401, ['X-Header-One' => 'Header Value']);
